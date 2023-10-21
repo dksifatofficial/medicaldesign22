@@ -5,13 +5,13 @@ import Image from "next/image";
 const page = () => {
   return (
     <>
-      <div className="px-10 py-8 bg-white shadow-md">
+      <div className="px-4 md:px-8 lg:px-10 py-8 bg-white shadow-md">
         <div className="flex flex-col gap-2 pb-6 mb-6 border-b">
           <h2 className=" font-bold text-3xl text-gray-700">About Me</h2>
           <p className=" text-sm text-gray-400">A little something about me.</p>
         </div>
-        <div className="w-full flex flex-row">
-          <div className="w-[50%]">
+        <div className="w-full flex flex-col lg:flex-row gap-y-6">
+          <div className="w-full lg:w-[50%]">
             <p className=" text-sm text-gray-400 pr-4">
               I am a New York based Psychologist, and was born and raised in New
               Jersey. I completed my Masters in Clinical Psychology from Rutgers
@@ -44,8 +44,8 @@ const page = () => {
               in the lives, and infuses positivity.
             </p>
           </div>
-          <div className="w-[50%]">
-            <div className="flex flex-col gap-y-4 justify-start ml-6">
+          <div className="w-full lg:w-[50%]">
+            <div className="flex flex-col gap-y-4 justify-start ml-0 lg:ml-6">
               <Image
                 className="w-full overflow-hidden object-cover"
                 src="/image51.jpg"
