@@ -19,8 +19,8 @@ const member = {
 const SideSection = () => {
   return (
     <>
-      <div className="w-[270px] flex flex-col gap-6">
-        <div>
+      <div className="w-full lg:w-[270px] flex flex-col gap-y-6">
+        <div className="hidden lg:block">
           <SideMenu />
         </div>
         <div className="bg-white shadow-md">

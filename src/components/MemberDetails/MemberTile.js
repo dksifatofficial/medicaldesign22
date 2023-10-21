@@ -6,9 +6,9 @@ const MemberTile = ({ item }) => {
   const router = useRouter();
   return (
     <div className="relative">
-      <div className="relative overflow-hideen aspect-w-1 aspect-h-1 h-40">
+      <div className="relative overflow-hideen aspect-w-1 aspect-h-1 h-auto w-full">
         <Image
-          className="h-40 object-cover"
+          className="h-auto w-full object-cover"
           src={item.imageUrl}
           alt=""
           width="400"

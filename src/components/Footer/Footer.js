@@ -64,10 +64,11 @@ const Footer = () => {
     <div className="">
       <div className="h-[2px] w-full bg-[linear-gradient(to_right,#5031a7,#0d9488,#35a1a5,#f85606)] text-[#35a1a5]" />
       <div className="bg-white w-full">
-        <div className="w-full flex flex-row px-24 py-12">
+
+        <div className="w-full flex flex-col lg:flex-row gap-x-4 gap-y-8 px-4 md:px-10 lg:px-24 py-12">
           {/* Footer left */}
-          <div className="w-[33%]">
-            <div className=" flex flex-col justify-start">
+          <div className="w-full lg:w-[33%]">
+            <div className="flex flex-col justify-start">
               <h4 className="uppercase text-xl font-bold text-gray-700">
                 A LITTLE SOMETHING ABOUT US
               </h4>
@@ -77,7 +78,7 @@ const Footer = () => {
                 The point of using Lorem Ipsum is that it has a more-or-less
                 normal distribution of letters.
               </p>
-              <button className="mb-2" onClick={() => router.push("/")}>
+              <button className="mb-0 lg:mb-2" onClick={() => router.push("/")}>
                 <p className="py-2 text-[#129acd] text-left font-bold hover:underline">
                   Read More
                 </p>
@@ -86,7 +87,7 @@ const Footer = () => {
           </div>
 
           {/* Footer middle */}
-          <div className="w-[33%]">
+          <div className="w-full lg:w-[33%]">
             <div className="w-full flex flex-row">
               <div className="w-[50%]">
                 <h4 className="uppercase text-xl font-bold text-gray-700">
@@ -105,14 +106,14 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="w-[50%]">
-                <h4 className="uppercase text-xl font-bold text-gray-700">
+                <h4 className="uppercase text-right lg:text-left text-xl font-bold text-gray-700">
                   OUR SERVICES
                 </h4>
                 <ul className="mt-4 flex flex-col justify-start gap-2">
                   {ServicesMenu.map((item, index) => (
                     // eslint-disable-next-line react/jsx-key
                     <li
-                      className="text-xs uppercase font-bold text-gray-400 hover:underline cursor-pointer"
+                      className="text-xs text-right lg:text-left uppercase font-bold text-gray-400 hover:underline cursor-pointer"
                       onClick={() => router.push(item.url)}
                     >
                       {item.name}
@@ -124,7 +125,7 @@ const Footer = () => {
           </div>
 
           {/* Footer right */}
-          <div className="w-[33%]">
+          <div className="w-full lg:w-[33%]">
             <div className="">
               <h4 className="uppercase text-xl font-bold text-gray-700">
                 BUY NOW
@@ -148,11 +149,11 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t mx-24 py-4">
-          <div className="w-full flex flex-row justify-between">
-            <div className="w-52">
+        <div className="border-t mx-4 md:mx10 lg:mx-24 py-4">
+          <div className="w-full flex flex-col lg:flex-row justify-center lg:justify-between gap-y-4">
+            <div className="w-full flex justify-center">
               <Image
-                className="w-52 cursor-pointer"
+                className="w-52 cursor-pointer h-auto object-cover"
                 src="/LogoFooter.png"
                 alt=""
                 width={500}
