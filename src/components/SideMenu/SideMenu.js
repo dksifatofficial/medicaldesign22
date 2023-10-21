@@ -2,7 +2,7 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import { IoMdArrowDropright } from "react-icons/io";
-import { menuBarService } from "./MenuBarLists";
+import { menuBarService } from "@/components/SideMenu/MenuBarLists";
 import classes from "./classes.module.css";
 
 export default function SideMenu() {

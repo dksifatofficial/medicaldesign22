@@ -1,9 +1,9 @@
-
+import MainSection from "@/Components/BodySection/MainSection";
 
 export default function Home() {
   return (
-    <main>
-      <div>home</div>
-    </main>
-  )
+    <>
+      <MainSection />
+    </>
+  );
 }

@@ -4,8 +4,8 @@ import {
   AiOutlineFilePdf,
   AiOutlineFileWord,
 } from "react-icons/ai";
-import MemberTile from "../MemberDetails/MemberTile";
-import SideMenu from "../SideMenu/SideMenu";
+import MemberTile from "@/components/MemberDetails/MemberTile";
+import SideMenu from "@/components/SideMenu/SideMenu";
 
 const member = {
   name: "Jennifer Willinger, Ph.D",

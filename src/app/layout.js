@@ -1,5 +1,5 @@
-import SideSection from "@/Components/BodySection/SideSection";
-import Footer from "@/Components/Footer/Footer";
+import SideSection from "@/components/BodySection/SideSection";
+import Footer from "@/components/Footer/Footer";
 import HeaderMenu from "@/components/HeaderMenu/Header";
 import { Inter } from "next/font/google";
 import "./globals.css";
