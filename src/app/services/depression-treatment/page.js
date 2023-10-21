@@ -9,13 +9,13 @@ const Therapy = {
   details2:
     "We approach patients with depression through various routes at one time to make the treatment effective, and help patients recover from their disruptive mental state sooner. First of all, we listen, understand, analyze and evaluate the problems of the patient through verbal counselling sessions, and then categorize the depression level medically to define the treatment path to follow. Depression is treatable, and there are many effective treatments available.",
   image1: "/DepressionTreatment1.jpg",
-  image2: "DepressionTreatment2.jpg",
+  image2: "/DepressionTreatment2.jpg",
 };
 
 const page = () => {
   return (
     <>
-      <div className="px-10 py-8 bg-white shadow-md">
+      <div className="px-4 md:px-6 lg:px-10 py-8 bg-white shadow-md">
         <TherapyTile item={Therapy} />
       </div>
       

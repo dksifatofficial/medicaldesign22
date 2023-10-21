@@ -1,5 +1,5 @@
 .mcdMenu li {
-  @apply mt-1 flex flex-row p-3  cursor-pointer px-4 text-xs uppercase font-semibold;
+  @apply mt-1 flex flex-row p-3 cursor-pointer px-4 text-xs uppercase font-semibold;
 }
 .mcdMenu li:hover {
   @apply text-[#e67e22] bg-[rgba(212,214,214,0.38)];

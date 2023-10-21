@@ -36,7 +36,6 @@ export default function SideMenu() {
                 ? "text-[#e67e22] bg-[rgba(212,214,214,0.38)]"
                 : "text-[#686766] bg-white"
             }`}
-            // onClick={() => router.push("/service")}
           >
             <div className="relative w-full flex flex-row">
               <p>Service</p>
