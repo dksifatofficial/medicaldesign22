@@ -57,7 +57,7 @@ const ImageSlider = ({ images }) => {
 
   return (
     <div
-      className="h-[400px] relative overflow-hidden shadow-md"
+      className="h-[200px] md:h-[300px] lg:h-[400px] relative overflow-hidden shadow-md"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -67,7 +67,7 @@ const ImageSlider = ({ images }) => {
       >
         {[...images, images[0]].map((image, index) => (
           <Link
-            className="h-[400px] relative flex-[0_0_100%] w-full flex justify-center
+            className="h-[200px] md:h-[300px] lg:h-[400px] relative flex-[0_0_100%] w-full flex justify-center
             items-center transition-transform duration-[1s] ease-[ease] overflow-hidden"
             key={index}
             href={image.link}
@@ -81,13 +81,13 @@ const ImageSlider = ({ images }) => {
             <div className="absolute z-[1] p-[10px] top-0 left-0 w-full h-full">
               <div
                 className="max-w-screen-xl mx-auto px-4 xl:px-0 py-10 flex flex-col gap-y-2 
-                justify-center h-full ml-16"
+                justify-center h-full ml-6 md:ml-12 lg:ml-16"
               >
                 <motion.h2
                   initial={{ y: 30, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="text-2xl font-bold text-slate-700"
+                  className="text-lg md:text-xl lg:text-2xl font-bold text-slate-700"
                 >
                   {image.header}
                 </motion.h2>
@@ -95,7 +95,7 @@ const ImageSlider = ({ images }) => {
                   initial={{ y: 60, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.8 }}
-                  className="text-base m-0 text-slate-600"
+                  className=" text-xs md:text-sm lg:text-base m-0 text-slate-600"
                 >
                   {image.description}
                 </motion.p>
@@ -106,7 +106,7 @@ const ImageSlider = ({ images }) => {
       </div>
       <div
         className="flex justify-between w-full px-5 py-0 absolute top-0 transform transition-opacity
-      opacity-1 hover:opacity-[1] duration-300 ease-in-out h-[400px]"
+        opacity-1 hover:opacity-[1] duration-300 ease-in-out h-[200px] md:h-[300px] lg:h-[400px]"
       >
         <button
           className="text-white text-2xl cursor-pointer px-1 py-3 bg-[#969595a2]

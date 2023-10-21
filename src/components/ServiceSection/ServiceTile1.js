@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 const ServiceTile1 = ({ image }) => {
     const router = useRouter()
   return (
-    <div className=" flex flex-row gap-4">
+    <div className="flex flex-row gap-4">
       <div className="h-16 w-48 overflow-hidden">
         <Image
           className=" object-cover"
@@ -19,7 +19,7 @@ const ServiceTile1 = ({ image }) => {
         <h3 className="text-sm font-bold text-gray-700 hover:text-[#129acd] hover:underline"
         onClick={() => router.push(image.link)}
         >{image.header}</h3>
-        <p className="text-sm text-gray-400">{image.description}</p>
+        <p className="text-xs lg:text-sm text-gray-400 line-clamp-2">{image.description}</p>
       </div>
     </div>
   );

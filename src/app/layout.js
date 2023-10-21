@@ -24,12 +24,12 @@ export default function RootLayout({ children }) {
         <HeaderMenu />
         <main className="flex flex-col items-center justify-between w-full">
           <div className="w-full">
-            <div className="w-full px-24 bg-transparent flex flex-col gap-y-6">
-              <div className="flex justify-between mb-12 gap-6">
-                <div className="w-[270px] order-1">
+            <div className="w-full px-2 md:px-6 lg:px-24 bg-transparent flex flex-col gap-y-6">
+              <div className="flex flex-col lg:flex-row justify-between mb-12 gap-6">
+                <div className="w-[270px] order-2 lg:order-1">
                   <SideSection />
                 </div>
-                <div className="order-2">{children}</div>
+                <div className="order-1 lg:order-2">{children}</div>
               </div>
             </div>
           </div>

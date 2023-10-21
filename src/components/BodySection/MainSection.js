@@ -17,10 +17,10 @@ const MainSection = () => {
       <div className="flex justify-center mb-6">
         <ImageSlider images={images1} />
       </div>
-      <div className="px-10 py-8 bg-white shadow-md w-full">
+      <div className="px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-8 bg-white shadow-md w-full">
         {/* wellcome section */}
-        <div className="flex flex-row w-full gap-6">
-          <div className=" space-y-6 w-[50%]">
+        <div className="flex flex-col lg:flex-row w-full gap-y-8 gap-x-6">
+          <div className="space-y-4 lg:space-y-6 w-[100%] lg:w-[50%]">
             <h2 className="text-2xl font-bold text-gray-700">
               Welcome to my Practice
             </h2>
@@ -44,7 +44,7 @@ const MainSection = () => {
               </p>
             </button>
           </div>
-          <div className="flex flex-col gap-6 justify-start w-[50%]">
+          <div className="flex flex-col gap-6 justify-start w-[100%] lg:w-[50%]">
             {service1.map((image, index) => (
               // eslint-disable-next-line react/jsx-key
               <ServiceTile1 image={image} />
@@ -53,9 +53,10 @@ const MainSection = () => {
         </div>
 
         {/* policy & book Button section */}
-        <div className="flex flex-row gap-8 mt-4 w-full">
+        <div className="flex flex-col lg:flex-row gap-8 mt-8 lg:mt-4 w-full">
           <div
-            className="p-4 border flex flex-row justify-between items-center w-[50%] cursor-pointer hover:border-gray-300"
+            className="p-4 border flex flex-row justify-between items-center w-full lg:w-[50%]
+            hover:border-gray-300 cursor-pointer"
             onClick={() => router.push("/")}
           >
             <div className="">
@@ -71,7 +72,8 @@ const MainSection = () => {
             </div>
           </div>
           <div
-            className="p-4 border flex flex-row justify-between items-center w-[50%] cursor-pointer hover:border-gray-300"
+            className="p-4 border flex flex-row justify-between items-center w-full lg:w-[50%]
+            hover:border-gray-300 cursor-pointer"
             onClick={() => router.push("/")}
           >
             <div>
@@ -93,28 +95,29 @@ const MainSection = () => {
           {service1.map((image, index) => (
             // eslint-disable-next-line react/jsx-key
             <li>
-              <ServiceTile2 className="w-60" image={image} />
+              <ServiceTile2 className="w-full lg:w-60" image={image} />
             </li>
           ))}
         </ul>
 
         {/* Testimonials section */}
-        <div className="bg-gray-100 flex flex-col justify-center p-12 mt-12">
-          <h2 className=" text-gray-700 text-2xl mb-8 font-bold text-center">
+        <div className="bg-gray-100 flex flex-col justify-center p-4 md:p-7 lg:p-12 mt-12">
+          <h2 className=" text-gray-700 text-lg md:text-xl lg:text-2xl mb-4 md:mb-6 lg:mb-8 font-bold text-center">
             Testimonials
           </h2>
           <div className="bg-white shadow-sm relative">
-            <p className="w-full text-center text-sm px-16 py-12 text-gray-400">
+            <p className="w-full text-center text-sm px-8 md:px-12 lg:px-16 py-8 lg:py-12 text-gray-400">
               We&apos;ve had a lot of financial troubles over the years; loss of
               physical health, job and bankruptcy. Laura&apos;s coaching gave us
               hope and a new sense of vision so we can create our lives
               together.
             </p>
-            <div className="absolute top-8 left-0 h-12 w-12 bg-[#73bfa6] flex justify-center items-center">
-              <FaComments className="text-2xl text-white" />
+            <div className="absolute top-8 left-0 h-8 md:h-10 lg:h-12 w-8 md:w-10 lg:w-12 bg-[#73bfa6] flex
+              justify-center items-center">
+              <FaComments className="text-lg md:text-xl lg:text-2xl text-white" />
             </div>
           </div>
-          <p className="mt-8 uppercase text-gray-700 text-xs font-bold text-center">
+          <p className="mt-4 md:mt-6 lg:mt-8 uppercase text-gray-700 text-xs font-bold text-center">
             ANASTACIA ROCKAFELLER
           </p>
           <p className="text-gray-400 text-xs text-center">Mother of two.</p>
@@ -122,11 +125,11 @@ const MainSection = () => {
 
         {/* Questions section */}
         <div className="mt-12">
-          <h2 className=" text-gray-700 text-2xl mb-8 font-bold text-center">
+          <h2 className=" text-gray-700 text-2xl mb-8 font-bold text-start lg:text-center">
             Frequently Asked Questions
           </h2>
           <ul className="flex flex-wrap gap-8 w-full justify-between mt-6">
-            <li className="w-56 flex flex-col justify-start">
+            <li className="w-full lg:w-56 flex flex-col justify-start">
               <p className="text-sm text-gray-400 font-semibold mb-4">
                 What can I expect in the first session when I see a therapist?
               </p>
@@ -144,7 +147,7 @@ const MainSection = () => {
                 </p>
               </button>
             </li>
-            <li className="w-56 flex flex-col justify-start">
+            <li className="w-full lg:w-56 flex flex-col justify-start">
               <p className="text-sm text-gray-400 font-semibold mb-4">
                 What are the signs of being abused by partner?
               </p>
@@ -162,7 +165,7 @@ const MainSection = () => {
                 </p>
               </button>
             </li>
-            <li className="w-56 flex flex-col justify-start">
+            <li className="w-full lg:w-56 flex flex-col justify-start">
               <p className="text-sm text-gray-400 font-semibold mb-4">
                 What can I expect in the first session when I see a therapist?
               </p>
@@ -185,10 +188,10 @@ const MainSection = () => {
       </div>
 
       {/* Service Tile section */}
-      <ul className="flex flex-wrap w-full gap-4 justify-between mt-6">
+      <ul className="flex flex-col lg:flex-row lg:flex-wrap w-full gap-4 justify-between mt-6">
         {service3.map((item, index) => (
           // eslint-disable-next-line react/jsx-key
-          <li className="w-[32%] relative">
+          <li className="w-full lg:w-[32%] relative">
             <ServiceTile3 item={item} />
           </li>
         ))}

@@ -6,9 +6,9 @@ const ServiceTile2 = ({ image, className }) => {
   const router = useRouter();
   return (
     <div className={`flex flex-col gap-4 ${className}`}>
-      <div className="h-32 w-full overflow-hidden">
+      <div className="h-auto w-full overflow-hidden">
         <Image
-          className="object-cover"
+          className="object-cover w-full"
           src={image.src}
           alt={image.alt}
           height={200}
