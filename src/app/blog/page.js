@@ -15,7 +15,7 @@ const page = () => {
   };
 
   return (
-    <div className="">
+    <>
       <div className="px-10 py-8 bg-white shadow-md w-full">
         <div className="flex flex-col gap-2 pb-6 mb-8 border-b">
           <h2 className=" font-bold text-3xl text-gray-700">Blog</h2>
@@ -74,15 +74,16 @@ const page = () => {
           </PaginationButton>
         </div>
       </div>
-      <ul className="flex flex-wrap w-full gap-4 justify-between mt-6">
+      {/* Service Tile section */}
+      <ul className="flex flex-col lg:flex-row lg:flex-wrap w-full gap-4 justify-between mt-6">
         {service3.map((item, index) => (
           // eslint-disable-next-line react/jsx-key
-          <li className="w-[32%] relative">
+          <li className="w-full lg:w-[48%] xl:w-[32%] relative">
             <ServiceTile3 item={item} />
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 };
 

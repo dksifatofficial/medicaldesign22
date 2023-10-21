@@ -20,10 +20,10 @@ const page = () => {
       </div>
       
       {/* Service Tile section */}
-      <ul className="flex flex-wrap w-full gap-4 justify-between mt-6">
+      <ul className="flex flex-col lg:flex-row lg:flex-wrap w-full gap-4 justify-between mt-6">
         {service3.map((item, index) => (
           // eslint-disable-next-line react/jsx-key
-          <li className="w-[32%] relative">
+          <li className="w-full lg:w-[48%] xl:w-[32%] relative">
             <ServiceTile3 item={item} />
           </li>
         ))}
