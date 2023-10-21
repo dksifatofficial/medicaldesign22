@@ -12,7 +12,7 @@ const HeaderMenu = () => {
   return (
     <>
       <div className="w-full h-[80px] bg-gray-500" />
-      <div className="w-full px-2 md:px-6 lg:px-24 bg-transparent mb-6">
+      <div className="w-full px-2 md:px-6 lg:px-10 xl:px-24 bg-transparent mb-6">
         <div className="bg-white flex flex-col lg:flex-row justify-center lg:justify-around py-2 lg:py-3 px-4 mt-[-50px] shadow-md">
           <div
             className="cursor-pointer w-full lg:w-60 h-auto overflow-hidden flex justify-center"

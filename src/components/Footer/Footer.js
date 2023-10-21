@@ -151,7 +151,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t mx-4 md:mx10 lg:mx-24 py-4">
           <div className="w-full flex flex-col lg:flex-row justify-center lg:justify-between gap-y-4">
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center lg:justify-start">
               <Image
                 className="w-52 cursor-pointer h-auto object-cover"
                 src="/LogoFooter.png"

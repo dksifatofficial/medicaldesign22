@@ -1,5 +1,5 @@
 "use client";
-import { images1, service1, service3 } from "@/utils/Utils1";
+import { images1, service1, service2, service3 } from "@/utils/Utils1";
 import { useRouter } from "next/navigation";
 import { FaComments } from "react-icons/fa";
 import { IoMdArrowDropright } from "react-icons/io";
@@ -7,7 +7,6 @@ import ImageSlider from "../ImageSlider/ImageSlider";
 import ServiceTile1 from "../ServiceSection/ServiceTile1";
 import ServiceTile2 from "../ServiceSection/ServiceTile2";
 import ServiceTile3 from "../ServiceSection/ServiceTile3";
-import Link from "next/link";
 
 const MainSection = () => {
   const router = useRouter();
@@ -92,10 +91,10 @@ const MainSection = () => {
 
         {/* Service section */}
         <ul className="flex flex-wrap gap-6 w-full justify-between mt-12">
-          {service1.map((image, index) => (
+          {service2.map((image, index) => (
             // eslint-disable-next-line react/jsx-key
             <li>
-              <ServiceTile2 className="w-full lg:w-60" image={image} />
+              <ServiceTile2 className="w-full xl:w-60" image={image} />
             </li>
           ))}
         </ul>
@@ -125,11 +124,11 @@ const MainSection = () => {
 
         {/* Questions section */}
         <div className="mt-12">
-          <h2 className=" text-gray-700 text-2xl mb-8 font-bold text-start lg:text-center">
+          <h2 className="text-gray-700 text-2xl mb-8 font-bold text-start lg:text-center">
             Frequently Asked Questions
           </h2>
           <ul className="flex flex-wrap gap-8 w-full justify-between mt-6">
-            <li className="w-full lg:w-56 flex flex-col justify-start">
+            <li className="w-full xl:w-56 flex flex-col justify-start">
               <p className="text-sm text-gray-400 font-semibold mb-4">
                 What can I expect in the first session when I see a therapist?
               </p>
@@ -147,7 +146,7 @@ const MainSection = () => {
                 </p>
               </button>
             </li>
-            <li className="w-full lg:w-56 flex flex-col justify-start">
+            <li className="w-full xl:w-56 flex flex-col justify-start">
               <p className="text-sm text-gray-400 font-semibold mb-4">
                 What are the signs of being abused by partner?
               </p>
@@ -165,7 +164,7 @@ const MainSection = () => {
                 </p>
               </button>
             </li>
-            <li className="w-full lg:w-56 flex flex-col justify-start">
+            <li className="w-full xl:w-56 flex flex-col justify-start">
               <p className="text-sm text-gray-400 font-semibold mb-4">
                 What can I expect in the first session when I see a therapist?
               </p>
@@ -191,7 +190,7 @@ const MainSection = () => {
       <ul className="flex flex-col lg:flex-row lg:flex-wrap w-full gap-4 justify-between mt-6">
         {service3.map((item, index) => (
           // eslint-disable-next-line react/jsx-key
-          <li className="w-full lg:w-[32%] relative">
+          <li className="w-full lg:w-[48%] xl:w-[32%] relative">
             <ServiceTile3 item={item} />
           </li>
         ))}
