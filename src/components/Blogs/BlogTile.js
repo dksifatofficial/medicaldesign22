@@ -13,19 +13,19 @@ const BlogTile = ({ blog, onClick }) => {
             width={1000}
           />
         </div>
-        <div className="flex flex-row gap-3 items-center">
+        <div className="flex flex-row gap-2 lg:gap-3 items-center">
           <div className="bg-[#27916c]">
-            <p className="text-[10px] px-2 py-1 uppercase text-white">
+            <p className="text-[8px] lg:text-[10px] px-2 py-1 uppercase text-white">
               {blog.tag}
             </p>
           </div>
-          <p className="text-xs text-gray-400 font-semibold">
+          <p className="text-[10px] lg:text-xs text-gray-400 font-semibold">
             {blog.motherTag}
           </p>
-          <p className="text-xs text-gray-400 font-semibold">|</p>
-          <p className="text-xs text-gray-400 font-semibold">{blog.date}</p>
-          <p className="text-xs text-gray-400 font-semibold">|</p>
-          <p className="text-xs text-gray-400 font-semibold">
+          <p className="text-[10px] lg:text-xs text-gray-400 font-semibold">|</p>
+          <p className="text-[10px] lg:text-xs text-gray-400 font-semibold">{blog.date}</p>
+          <p className="text-[10px] lg:text-xs text-gray-400 font-semibold">|</p>
+          <p className="text-[10px] lg:text-xs text-gray-400 font-semibold">
             By {blog.author}
           </p>
         </div>

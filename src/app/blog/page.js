@@ -16,7 +16,7 @@ const page = () => {
 
   return (
     <>
-      <div className="px-10 py-8 bg-white shadow-md w-full">
+      <div className="px-4 md:px-8 lg:px-10 py-8 bg-white shadow-md w-full">
         <div className="flex flex-col gap-2 pb-6 mb-8 border-b">
           <h2 className=" font-bold text-3xl text-gray-700">Blog</h2>
           <p className=" text-sm text-gray-400">
