@@ -1,8 +1,8 @@
 "use client";
 
+import { menuBarService } from "@/components/SideMenu/MenuBarLists";
 import { usePathname, useRouter } from "next/navigation";
 import { IoMdArrowDropright } from "react-icons/io";
-import { menuBarService } from "@/components/SideMenu/MenuBarLists";
 import classes from "./classes.module.css";
 
 export default function SideMenu() {
@@ -36,7 +36,7 @@ export default function SideMenu() {
                 ? "text-[#e67e22] bg-[rgba(212,214,214,0.38)]"
                 : "text-[#686766] bg-white"
             }`}
-            onClick={() => router.push("/service")}
+            // onClick={() => router.push("/service")}
           >
             <div className="relative w-full flex flex-row">
               <p>Service</p>
@@ -51,21 +51,19 @@ export default function SideMenu() {
                    bg-transparent opacity-0 invisible" //opacity-0 invisible
             >
               <div
-                className="h-[298px] w-[230px] transition-all
+                className="h-[298px] w-[230px] transition-all 
                  duration-300 ease-linear z-[1000] top-0 px-0 py-2 
                  bg-white"
               >
-                {menuBarService.map((list, index) => {
-                  return (
-                    <li
-                      className="text-[#686766]"
-                      onClick={() => router.push(list.path)}
-                      key={index}
-                    >
-                      <p>{list.title}</p>
-                    </li>
-                  );
-                })}
+                {menuBarService.map((list, index) => (
+                  <li
+                    className="text-[#686766]"
+                    onClick={() => router.push(list.path)}
+                    key={index}
+                  >
+                    <p>{list.title}</p>
+                  </li>
+                ))}
               </div>
             </ul>
           </li>

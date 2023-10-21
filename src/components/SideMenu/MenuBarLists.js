@@ -1,27 +1,27 @@
 export const menuBarService = [
   {
     title: "Couples Therapy",
-    path: "/",
+    path: "/services/couples-therapy",
   },
   {
     title: "Depression Treatment",
-    path: "/",
+    path: "/services/depression-treatment",
   },
   {
     title: "Individual Treatment",
-    path: "/",
+    path: "/services/individual-treatment",
   },
   {
     title: "Therapy for Children",
-    path: "/",
+    path: "/services/therapy-for-children",
   },
   {
     title: "Anxiety Treatment",
-    path: "/",
+    path: "/services/anxiety-treatment",
   },
   {
     title: "Post-divorce Recovery",
-    path: "/",
+    path: "/services/post-divorce-recovery",
   },
 ];
 

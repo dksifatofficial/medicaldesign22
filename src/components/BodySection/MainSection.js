@@ -11,6 +11,7 @@ import Link from "next/link";
 
 const MainSection = () => {
   const router = useRouter();
+
   return (
     <>
       <div className="flex justify-center mb-6">
@@ -34,14 +35,14 @@ const MainSection = () => {
               emotional issues of the past and the present, to open the door to
               a brighter and confident future.
             </p>
-            <Link
+            <button
               className="mb-2"
-              href="/"
+              onClick={() => router.push("/")}
             >
               <p className="py-2 text-[#129acd] font-bold hover:underline">
                 Read More
               </p>
-            </Link>
+            </button>
           </div>
           <div className="flex flex-col gap-6 justify-start w-[50%]">
             {service1.map((image, index) => (
